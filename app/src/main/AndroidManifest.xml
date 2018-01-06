@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.qingfenghuu.iccsu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/changda"
+        android:label="@string/titile_name"
+        android:roundIcon="@drawable/info"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="TencentMapSdk"
+            android:value="NZBBZ-RSI3P-MVJDW-VE7ZK-MRTXZ-K5FPG"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/titile_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GradeActivity"
+            android:label="@string/title_activity_grade" />
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map" />
+        <activity android:name=".LostActivity"
+            android:label="@string/title_activity_lost"/>
+        <activity
+            android:name=".CardActivity"
+            android:label="@string/title_activity_card" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+</manifest>

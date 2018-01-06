@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">i长大2.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment2">Hello blank fragment222</string>
+    <string name="titile_name">i长大</string>
+    <string name="i_home">Home</string>
+    <string name="i_setting">Setting</string>
+    <string name="title_activity_grade">成绩</string>
+    <string name="title_activity_map">地图</string>
+    <string name="title_activity_lost">失物招领</string>
+    <string name="title_activity_card">校园卡</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>
